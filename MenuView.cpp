@@ -1,5 +1,6 @@
 #include "MenuView.h"
 
+//Нужно разобраться с этимим константами
 const int COLUMNCOUNT = 4;
 const int NAME_COLUMN = 0;
 const int PRICE_COLUMN = 1;
