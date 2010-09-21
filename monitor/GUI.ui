@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GUI</class>
+ <widget class="QWidget" name="GUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>703</width>
+    <height>588</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QStackedWidget" name="pager">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="DBConnectPage" name="db_connect_page"/>
+     <widget class="WorkPage" name="work_page"/>
+     <widget class="QWidget" name="blank_page"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>DBConnectPage</class>
+   <extends>QWidget</extends>
+   <header location="global">DBConnectPage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>WorkPage</class>
+   <extends>QWidget</extends>
+   <header location="global">WorkPage.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
