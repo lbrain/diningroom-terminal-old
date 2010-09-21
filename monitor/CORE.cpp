@@ -11,10 +11,11 @@ void CORE::Init() {
   db_connected = false;
 }
 
-void CORE::Connect(QString name,
-                   QString host,
-                   QString password,
-                   QString database) {
+void CORE::Connect(
+    QString database,
+    QString name,
+    QString host,
+    QString password) {
   if (db_connected)
     return;
 
@@ -48,6 +49,8 @@ void CORE::Disconnect() {
 }
 
 void CORE::Check() {
+  if (!db_connected)
+    return;
   QString query_string =
       "SELECT date, employee_id, surname, name, patronymic, SUM(count*price) "
       "FROM "

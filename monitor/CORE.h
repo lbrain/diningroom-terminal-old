@@ -17,10 +17,11 @@ signals:
   void Disconnected();
   void ListLoaded(OrderArray);
 public slots:
-  void Connect(QString name,
-          QString host,
-          QString password,
-          QString database);
+  void Connect(
+      QString database,
+      QString name,
+      QString host,
+      QString password);
   void Disconnect();
   void Check();
 private:
