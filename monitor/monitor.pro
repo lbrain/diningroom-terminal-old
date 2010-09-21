@@ -3,7 +3,6 @@ SOURCES += \
     main.cpp \
     CORE.cpp \
     Order.cpp \
-    OrderArray.cpp \
     DBConnectPage.cpp \
     GUI.cpp \
     WorkPage.cpp
@@ -11,7 +10,6 @@ SOURCES += \
 HEADERS += \
     CORE.h \
     Order.h \
-    OrderArray.h \
     DBConnectPage.h \
     GUI.h \
     WorkPage.h

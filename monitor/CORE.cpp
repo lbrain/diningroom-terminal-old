@@ -2,6 +2,9 @@
 
 const QString CONNECTIONNAME = "DBMONITORCONNECTION";
 const QString DBDRIVER = "QMYSQL";
+const QString EMPLOYEESTABLE = "employees";
+const QString DISHTABLE = "dishes";
+const QString ORDERSTABLE = "orders";
 
 CORE::CORE(QObject *parent) : QObject(parent) {
   Init();
@@ -54,42 +57,63 @@ void CORE::Check() {
   QString query_string =
       "SELECT date, employee_id, surname, name, patronymic, SUM(count*price) "
       "FROM "
-      "        (SELECT o.id, o.date, o.dish_id, o.count, o.employee_id, o.status, e.surname, e.name, e.patronymic, d.price "
+      "        (SELECT \'>>> \', o.date, o.dish_id, o.count, o.employee_id, o.status, e.surname, e.name, e.patronymic, d.price "
       "         FROM orders o, dishes d, employees e "
-      "        WHERE o.dish_id = d.id AND status = 'NA' AND e.id = employee_id "
+      "        WHERE o.dish_id = d.id AND status = \'NA\' AND e.id = employee_id "
       "        ORDER BY o.date) s "
-      "GROUP BY date, employee_id "
-      "ORDER BY date ";
+      "WHERE date = (SELECT MIN(date) FROM orders WHERE status = \'NA\') "
+      "GROUP BY date, employee_id ";
 
-  OrderArray orderArray;
-  SqlTable table = GetFromDB(query_string, 6);
-  for (int i = 0; i < table.size(); i++) {
-    Order newOrder = Order(table[i][0].toString(),
-                           table[i][1].toString(),
-                           table[i][2].toString(),
-                           table[i][3].toString(),
-                           table[i][4].toString(),
-                           table[i][5].toString());
-    orderArray.push_back(newOrder);
+  SqlTable orderTable = GetFromDB_ex(query_string, 6);
+
+  Order newOrder;
+  if (orderTable.size() == 0) {
+    qDebug() << "Empty list";
+    return;
   }
-  emit ListLoaded(orderArray);
+  newOrder = Order(orderTable[0][0].toString(),
+                   orderTable[0][1].toString(),
+                   orderTable[0][2].toString(),
+                   orderTable[0][3].toString(),
+                   orderTable[0][4].toString(),
+                   orderTable[0][5].toString());
+
+  query_string = QString(
+      "SELECT "
+      "     '>>> ', o.date, d.name, o.count, d.price "
+      "FROM "
+      "     orders o, dishes d "
+      "WHERE "
+      "     o.dish_id = d.id AND o.employee_id = %1 AND date = \'%2\' "
+      "ORDER BY "
+      "     date, employee_id").arg(newOrder.GetEmployeeId()).arg(newOrder.GetDate());
+  qDebug() << query_string;
+  SqlTable menuTable = GetFromDB_ex(query_string, 5);
+
+  if (menuTable.size() == 0) {
+    return;
+  }
+
+  QString tableToText;
+  for (int i = 0; i < menuTable.size(); i++) {
+    tableToText += menuTable[i][0].toString() + " " +
+                   menuTable[i][1].toString() + " " +
+                   menuTable[i][2].toString() + " ======== " +
+                   menuTable[i][3].toString() + " ******** " +
+                   menuTable[i][4].toString();
+    tableToText += '\n';
+  }
+
+  emit ListLoaded(newOrder, tableToText);
 }
 
-SqlTable CORE::GetFromDB(QString query_string, int fieldsCount) {
+SqlTable CORE::GetFromDB_ex(QString query_string, int fieldsCount) {
   if (!db_connected) {
     qDebug() << "GetFromDB:";
     qDebug() << " Connect to database first!";
     return SqlTable();
   }
   QSqlQuery query(db);
-//  QString query_string = "SELECT " + fields[0];
-//  for (int i = 1; i < fields.size(); i++) {
-//    query_string += ", " + fields[i];
-//  }
-//  query_string += " FROM " + table + " ";
-//  if (!condition.isEmpty()) {
-//    query_string += "WHERE " + condition;
-//  }
 
   if (!query.exec(query_string)) {
     return SqlTable();
@@ -105,4 +129,41 @@ SqlTable CORE::GetFromDB(QString query_string, int fieldsCount) {
   }
 
   return result;
+}
+
+void CORE::ConfirmOrder(Order order) {
+  SetOrderStatus(order, "A");
+}
+
+void CORE::DiscardOrder(Order order) {
+  SetOrderStatus(order, "D");
+}
+
+void CORE::SetOrderStatus(Order order, QString status) {
+  QSqlQuery query(db);
+  QString query_string = QString(
+      "UPDATE %1 SET status = \'%2\' WHERE date = \'%3\' AND employee_id = %4")
+      .arg(ORDERSTABLE)
+      .arg(status)
+      .arg(order.GetDate())
+      .arg(order.GetEmployeeId());
+  if (!query.exec(query_string)) {
+    qDebug() << query.lastError();
+    return;
+  }
+
+  if (status == "D") {
+    query_string = QString(
+        "UPDATE orders o, dishes d "
+        "SET d.remaining = o.count+d.remaining "
+        "WHERE o.date = \'%1\' AND o.employee_id = %2 AND o.dish_id = d.id")
+        .arg(order.GetDate())
+        .arg(order.GetEmployeeId());
+    qDebug() << query_string;
+    if (!query.exec(query_string)) {
+      qDebug() << query.lastError();
+      return;
+    }
+  }
+  emit StatusChanged();
 }

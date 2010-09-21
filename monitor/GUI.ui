@@ -20,7 +20,8 @@
       <number>0</number>
      </property>
      <widget class="DBConnectPage" name="db_connect_page"/>
-     <widget class="QWidget" name="work_page"/>
+     <widget class="WorkPage" name="work_page"/>
+     <widget class="QWidget" name="blank_page"/>
     </widget>
    </item>
   </layout>
@@ -30,6 +31,12 @@
    <class>DBConnectPage</class>
    <extends>QWidget</extends>
    <header location="global">DBConnectPage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>WorkPage</class>
+   <extends>QWidget</extends>
+   <header location="global">WorkPage.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

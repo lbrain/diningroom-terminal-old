@@ -3,7 +3,7 @@
 
 #include <QtGui>
 #include <QtSql>
-#include "OrderArray.h"
+#include "Order.h"
 
 typedef QVector< QVector<QVariant> >  SqlTable;
 
@@ -15,7 +15,8 @@ public:
 signals:
   void Connected();
   void Disconnected();
-  void ListLoaded(OrderArray);
+  void ListLoaded(Order, QString);
+  void StatusChanged();
 public slots:
   void Connect(
       QString database,
@@ -24,9 +25,12 @@ public slots:
       QString password);
   void Disconnect();
   void Check();
+  void ConfirmOrder(Order order);
+  void DiscardOrder(Order order);
 private:
   void Init();
-  SqlTable GetFromDB(QString query_string, int fieldsCount);
+  SqlTable GetFromDB_ex(QString query_string, int fieldsCount);
+  void SetOrderStatus(Order order, QString status);
 private:
   QString db_name;
   QString db_username;

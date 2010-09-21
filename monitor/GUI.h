@@ -2,7 +2,7 @@
 #define GUI_H
 
 #include <QtGui>
-#include "OrderArray.h"
+#include "Order.h"
 
 namespace Ui {
     class GUI;
@@ -19,12 +19,18 @@ signals:
   void Connect(QString, QString, QString, QString);
   void Quit();
   void Check();
+  void ConfirmOrder(Order);
+  void DiscardOrder(Order);
+  void Disconnect();
 public slots:
-  void ListLoaded(OrderArray array);
+  void ListLoaded(Order order, QString text);
   void SetFirstPage();
   void SetSecondPage();
+  void SetBlankPage();
+  void StatusChanged();
 private:
   Ui::GUI *ui;
+  QTimer* timer;
 };
 
 #endif // GUI_H

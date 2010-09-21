@@ -19,10 +19,31 @@ int main(int argc, char** argv) {
                    &app, SLOT(quit()));
 
   QObject::connect(core, SIGNAL(Connected()),
-                   gui, SLOT(SetSecondPage()));
+                   gui, SLOT(SetBlankPage()));
 
   QObject::connect(core, SIGNAL(Disconnected()),
                    gui, SLOT(SetFirstPage()));
+
+  QObject::connect(core, SIGNAL(Connected()),
+                   core, SLOT(Check()));
+
+  QObject::connect(core, SIGNAL(ListLoaded(Order,QString)),
+                   gui, SLOT(ListLoaded(Order,QString)));
+
+  QObject::connect(gui, SIGNAL(ConfirmOrder(Order)),
+                   core, SLOT(ConfirmOrder(Order)));
+
+  QObject::connect(gui, SIGNAL(DiscardOrder(Order)),
+                   core, SLOT(DiscardOrder(Order)));
+
+  QObject::connect(gui, SIGNAL(Disconnect()),
+                   core, SLOT(Disconnect()));
+
+  QObject::connect(core, SIGNAL(StatusChanged()),
+                   gui, SLOT(StatusChanged()));
+
+  QObject::connect(gui, SIGNAL(Check()),
+                   core, SLOT(Check()));
 
   return app.exec();
 }
