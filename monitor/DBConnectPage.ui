@@ -26,7 +26,7 @@
      <item row="0" column="1">
       <widget class="QLineEdit" name="loginField">
        <property name="text">
-        <string>root</string>
+        <string/>
        </property>
       </widget>
      </item>
@@ -50,7 +50,7 @@
      <item row="2" column="1">
       <widget class="QLineEdit" name="hostField">
        <property name="text">
-        <string>localhost</string>
+        <string/>
        </property>
       </widget>
      </item>
