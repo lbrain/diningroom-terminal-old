@@ -17,9 +17,9 @@
    <item>
     <widget class="QStackedWidget" name="pager">
      <property name="currentIndex">
-      <number>3</number>
+      <number>0</number>
      </property>
-     <widget class="DialPage" name="page1"/>
+     <widget class="QmlDialPad" name="page1"/>
      <widget class="MenuPage" name="page2"/>
      <widget class="LastPage" name="page3"/>
      <widget class="DBConnectPage" name="page4"/>
@@ -28,12 +28,6 @@
   </layout>
  </widget>
  <customwidgets>
-  <customwidget>
-   <class>DialPage</class>
-   <extends>QWidget</extends>
-   <header location="global">DialPage.h</header>
-   <container>1</container>
-  </customwidget>
   <customwidget>
    <class>MenuPage</class>
    <extends>QWidget</extends>
@@ -50,6 +44,12 @@
    <class>DBConnectPage</class>
    <extends>QWidget</extends>
    <header location="global">DBConnectPage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QmlDialPad</class>
+   <extends>QWidget</extends>
+   <header>QmlDialPad.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

@@ -32,7 +32,8 @@ SOURCES += \
     DBConnectPage.cpp \
     QmlDialPad.cpp
 
-QT += sql
+QT += sql \
+      declarative
 
 FORMS += \
     DialPage.ui \
