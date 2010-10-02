@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="410"
+   height="234.28572"
+   id="svg2"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="button-source.svg"
+   inkscape:export-filename="/home/hasan/QtCreator_projects/myQMLapp/elements/button.png"
+   inkscape:export-xdpi="20.830084"
+   inkscape:export-ydpi="20.830084">
+  <metadata
+     id="metadata18">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="975"
+     id="namedview16"
+     showgrid="false"
+     inkscape:zoom="0.1767767"
+     inkscape:cx="-231.09944"
+     inkscape:cy="1.7950084"
+     inkscape:window-x="-4"
+     inkscape:window-y="-3"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3631">
+      <stop
+         style="stop-color:#7a878a;stop-opacity:1;"
+         offset="0"
+         id="stop3633" />
+      <stop
+         id="stop3635"
+         offset="0.49000001"
+         style="stop-color:#545454;stop-opacity:1;" />
+      <stop
+         style="stop-color:#5b5b5b;stop-opacity:1;"
+         offset="0.50999999"
+         id="stop3637" />
+      <stop
+         style="stop-color:#9f9f9f;stop-opacity:1;"
+         offset="1"
+         id="stop3639" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3929">
+      <stop
+         id="stop3931"
+         offset="0"
+         style="stop-color:#404042;stop-opacity:1;" />
+      <stop
+         style="stop-color:#2c2c2c;stop-opacity:1;"
+         offset="0.49000001"
+         id="stop3933" />
+      <stop
+         id="stop3935"
+         offset="0.50999999"
+         style="stop-color:#303030;stop-opacity:1;" />
+      <stop
+         id="stop3937"
+         offset="1"
+         style="stop-color:#5a5a5e;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3604">
+      <stop
+         style="stop-color:#606466;stop-opacity:1;"
+         offset="0"
+         id="stop3606" />
+      <stop
+         id="stop3913"
+         offset="0.49000001"
+         style="stop-color:#414141;stop-opacity:1;" />
+      <stop
+         style="stop-color:#4a4a4a;stop-opacity:1;"
+         offset="0.50999999"
+         id="stop3915" />
+      <stop
+         style="stop-color:#7c8082;stop-opacity:1;"
+         offset="1"
+         id="stop3608" />
+    </linearGradient>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 117.14286 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="410 : 117.14286 : 1"
+       inkscape:persp3d-origin="205 : 78.09524 : 1"
+       id="perspective20" />
+    <linearGradient
+       id="linearGradient3591">
+      <stop
+         id="stop3593"
+         style="stop-color:#7697be;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop3595"
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3590">
+      <stop
+         id="stop3592"
+         style="stop-color:#414141;stop-opacity:1;"
+         offset="0" />
+      <stop
+         id="stop3594"
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1" />
+    </linearGradient>
+    <radialGradient
+       cx="99.156158"
+       cy="341.276"
+       r="111.42857"
+       fx="99.156158"
+       fy="341.276"
+       id="radialGradient3598"
+       xlink:href="#linearGradient3590"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0235488,1.0932022,-1.1083379,1.0377203,383.90081,-100.1846)" />
+    <linearGradient
+       x1="291.42859"
+       y1="746.64789"
+       x2="504.28571"
+       y2="25.219334"
+       id="linearGradient3597"
+       xlink:href="#linearGradient3591"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.8815331,0,0,0.78048781,-323.39472,22.225843)" />
+    <filter
+       color-interpolation-filters="sRGB"
+       id="filter3617">
+      <feGaussianBlur
+         id="feGaussianBlur3619"
+         stdDeviation="6.0844947" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3604"
+       id="linearGradient3610"
+       x1="176.89062"
+       y1="-59.84375"
+       x2="176.89062"
+       y2="-262"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3590"
+       id="linearGradient3814"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-439.43349,-66.687191)"
+       x1="176.88124"
+       y1="-52.397259"
+       x2="176.88124"
+       y2="-269.44833" />
+    <filter
+       inkscape:collect="always"
+       id="filter3888">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.4824695"
+         id="feGaussianBlur3890" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3929"
+       id="linearGradient3925"
+       gradientUnits="userSpaceOnUse"
+       x1="176.89062"
+       y1="-59.84375"
+       x2="176.89062"
+       y2="-262" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3590"
+       id="linearGradient3927"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(82.832511,-72.302954)"
+       x1="176.88124"
+       y1="-52.397259"
+       x2="176.88124"
+       y2="-269.44833" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3631"
+       id="linearGradient2855"
+       gradientUnits="userSpaceOnUse"
+       x1="176.89062"
+       y1="-59.84375"
+       x2="176.89062"
+       y2="-262" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3590"
+       id="linearGradient2857"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-937.16749,-72.302954)"
+       x1="176.88124"
+       y1="-52.397259"
+       x2="176.88124"
+       y2="-269.44833" />
+  </defs>
+  <path
+     transform="translate(-439.43349,-66.687191)"
+     d="m -16.84375,-262 c -5.990622,0 -10.53125,4.54062 -10.53125,10.53125 l 0,181.09375 c 0,5.990619 4.540631,10.53125 10.53125,10.53125 l 387.46875,0 c 5.99063,0 10.53125,-4.540628 10.53125,-10.53125 l 0,-181.09375 C 381.15625,-257.45938 376.61563,-262 370.625,-262 l -387.46875,0 z"
+     id="path3818"
+     style="fill:#fcff2e;fill-opacity:0.23999999000000000;fill-rule:evenodd;stroke:none;filter:url(#filter3888)"
+     inkscape:original="M -16.84375 -271.125 C -27.732715 -271.125 -36.5 -262.35772 -36.5 -251.46875 L -36.5 -70.375 C -36.5 -59.486035 -27.732715 -50.71875 -16.84375 -50.71875 L 370.625 -50.71875 C 381.51397 -50.71875 390.28125 -59.486035 390.28125 -70.375 L 390.28125 -251.46875 C 390.28125 -262.35772 381.51397 -271.125 370.625 -271.125 L -16.84375 -271.125 z "
+     inkscape:radius="-9.1256161"
+     sodipodi:type="inkscape:offset"
+     inkscape:export-filename="/home/hasan/QtCreator_projects/myQMLapp/elements/mouse_normal.png"
+     inkscape:export-xdpi="20.830082"
+     inkscape:export-ydpi="20.830082" />
+  <path
+     sodipodi:type="inkscape:offset"
+     inkscape:radius="-6.6408629"
+     inkscape:original="M 15.4375 -186.1875 C 4.5485345 -186.1875 -4.21875 -177.42022 -4.21875 -166.53125 L -4.21875 14.5625 C -4.21875 25.451465 4.5485345 34.21875 15.4375 34.21875 L 402.9375 34.21875 C 413.82647 34.21875 422.59375 25.451465 422.59375 14.5625 L 422.59375 -166.53125 C 422.59375 -177.42022 413.82647 -186.1875 402.9375 -186.1875 L 15.4375 -186.1875 z "
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+     id="path3735"
+     d="m 15.4375,-179.53125 c -7.3243597,0 -13,5.67564 -13,13 l 0,181.09375 c 0,7.324357 5.6756424,13 13,13 l 387.5,0 c 7.32436,0 13,-5.675641 13,-13 l 0,-181.09375 c 0,-7.32437 -5.67563,-13 -13,-13 l -387.5,0 z"
+     transform="translate(-471.72413,-151.62561)"
+     inkscape:export-filename="/home/hasan/QtCreator_projects/myQMLapp/elements/mouse_normal.png"
+     inkscape:export-xdpi="20.830082"
+     inkscape:export-ydpi="20.830082" />
+  <path
+     sodipodi:type="inkscape:offset"
+     inkscape:radius="-9.1256161"
+     inkscape:original="M -16.84375 -271.125 C -27.732715 -271.125 -36.5 -262.35772 -36.5 -251.46875 L -36.5 -70.375 C -36.5 -59.486035 -27.732715 -50.71875 -16.84375 -50.71875 L 370.625 -50.71875 C 381.51397 -50.71875 390.28125 -59.486035 390.28125 -70.375 L 390.28125 -251.46875 C 390.28125 -262.35772 381.51397 -271.125 370.625 -271.125 L -16.84375 -271.125 z "
+     style="fill:url(#linearGradient3610);fill-opacity:1;fill-rule:evenodd;stroke:none"
+     id="path2830"
+     d="m -16.84375,-262 c -5.990622,0 -10.53125,4.54062 -10.53125,10.53125 l 0,181.09375 c 0,5.990619 4.540631,10.53125 10.53125,10.53125 l 387.46875,0 c 5.99063,0 10.53125,-4.540628 10.53125,-10.53125 l 0,-181.09375 C 381.15625,-257.45938 376.61563,-262 370.625,-262 l -387.46875,0 z"
+     transform="translate(-439.43349,-66.687191)"
+     inkscape:export-filename="/home/hasan/QtCreator_projects/myQMLapp/elements/mouse_normal.png"
+     inkscape:export-xdpi="20.830082"
+     inkscape:export-ydpi="20.830082" />
+  <path
+     style="fill:url(#linearGradient3814);fill-opacity:1;fill-rule:evenodd;stroke:none;"
+     d="m -456.28663,-328.68811 c -5.99062,0 -10.53125,4.54062 -10.53125,10.53125 l 0,181.09375 c 0,5.99062 4.54063,10.53125 10.53125,10.53125 l 387.46875,0 c 5.99063,0 10.53125,-4.54063 10.53125,-10.53125 l 0,-181.09375 c 0,-5.99063 -4.54062,-10.53125 -10.53125,-10.53125 l -387.46875,0 z m 0,8.4375 387.46875,0 c 1.73414,0 2.09375,0.35961 2.09375,2.09375 l 0,181.09375 c 0,1.73412 -0.35962,2.09375 -2.09375,2.09375 l -387.46875,0 c -1.73411,0 -2.09375,-0.35964 -2.09375,-2.09375 l 0,-181.09375 c 0,-1.73413 0.35962,-2.09375 2.09375,-2.09375 z"
+     id="path3716"
+     inkscape:export-filename="/home/hasan/QtCreator_projects/myQMLapp/elements/mouse_normal.png"
+     inkscape:export-xdpi="20.830082"
+     inkscape:export-ydpi="20.830082" />
+  <path
+     sodipodi:type="inkscape:offset"
+     inkscape:radius="-9.1256161"
+     inkscape:original="M -16.84375 -271.125 C -27.732715 -271.125 -36.5 -262.35772 -36.5 -251.46875 L -36.5 -70.375 C -36.5 -59.486035 -27.732715 -50.71875 -16.84375 -50.71875 L 370.625 -50.71875 C 381.51397 -50.71875 390.28125 -59.486035 390.28125 -70.375 L 390.28125 -251.46875 C 390.28125 -262.35772 381.51397 -271.125 370.625 -271.125 L -16.84375 -271.125 z "
+     style="fill:#fcff2e;fill-opacity:0.23999999;fill-rule:evenodd;stroke:none;filter:url(#filter3888)"
+     id="path3917"
+     d="m -16.84375,-262 c -5.990622,0 -10.53125,4.54062 -10.53125,10.53125 l 0,181.09375 c 0,5.990619 4.540631,10.53125 10.53125,10.53125 l 387.46875,0 c 5.99063,0 10.53125,-4.540628 10.53125,-10.53125 l 0,-181.09375 C 381.15625,-257.45938 376.61563,-262 370.625,-262 l -387.46875,0 z"
+     transform="translate(82.832511,-72.302954)"
+     inkscape:export-filename="/home/hasan/QtCreator_projects/myQMLapp/elements/button_pressed.png"
+     inkscape:export-xdpi="20.830082"
+     inkscape:export-ydpi="20.830082" />
+  <path
+     transform="translate(50.541871,-157.24137)"
+     d="m 15.4375,-179.53125 c -7.3243597,0 -13,5.67564 -13,13 l 0,181.09375 c 0,7.324357 5.6756424,13 13,13 l 387.5,0 c 7.32436,0 13,-5.675641 13,-13 l 0,-181.09375 c 0,-7.32437 -5.67563,-13 -13,-13 l -387.5,0 z"
+     id="path3919"
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+     inkscape:original="M 15.4375 -186.1875 C 4.5485345 -186.1875 -4.21875 -177.42022 -4.21875 -166.53125 L -4.21875 14.5625 C -4.21875 25.451465 4.5485345 34.21875 15.4375 34.21875 L 402.9375 34.21875 C 413.82647 34.21875 422.59375 25.451465 422.59375 14.5625 L 422.59375 -166.53125 C 422.59375 -177.42022 413.82647 -186.1875 402.9375 -186.1875 L 15.4375 -186.1875 z "
+     inkscape:radius="-6.6408629"
+     sodipodi:type="inkscape:offset"
+     inkscape:export-filename="/home/hasan/QtCreator_projects/myQMLapp/elements/button_pressed.png"
+     inkscape:export-xdpi="20.830082"
+     inkscape:export-ydpi="20.830082" />
+  <path
+     transform="matrix(1,0,0,-1,82.832511,-394.1467)"
+     d="m -16.84375,-262 c -5.990622,0 -10.53125,4.54062 -10.53125,10.53125 l 0,181.09375 c 0,5.990619 4.540631,10.53125 10.53125,10.53125 l 387.46875,0 c 5.99063,0 10.53125,-4.540628 10.53125,-10.53125 l 0,-181.09375 C 381.15625,-257.45938 376.61563,-262 370.625,-262 l -387.46875,0 z"
+     id="path3921"
+     style="fill:url(#linearGradient3925);fill-opacity:1;fill-rule:evenodd;stroke:none"
+     inkscape:original="M -16.84375 -271.125 C -27.732715 -271.125 -36.5 -262.35772 -36.5 -251.46875 L -36.5 -70.375 C -36.5 -59.486035 -27.732715 -50.71875 -16.84375 -50.71875 L 370.625 -50.71875 C 381.51397 -50.71875 390.28125 -59.486035 390.28125 -70.375 L 390.28125 -251.46875 C 390.28125 -262.35772 381.51397 -271.125 370.625 -271.125 L -16.84375 -271.125 z "
+     inkscape:radius="-9.1256161"
+     sodipodi:type="inkscape:offset"
+     inkscape:export-filename="/home/hasan/QtCreator_projects/myQMLapp/elements/button_pressed.png"
+     inkscape:export-xdpi="20.830082"
+     inkscape:export-ydpi="20.830082" />
+  <path
+     id="path3923"
+     d="m 65.979371,-334.30387 c -5.99062,0 -10.53125,4.54062 -10.53125,10.53125 l 0,181.09375 c 0,5.99062 4.54063,10.53125 10.53125,10.53125 l 387.468749,0 c 5.99063,0 10.53125,-4.54063 10.53125,-10.53125 l 0,-181.09375 c 0,-5.99063 -4.54062,-10.53125 -10.53125,-10.53125 l -387.468749,0 z m 0,8.4375 387.468749,0 c 1.73414,0 2.09375,0.35961 2.09375,2.09375 l 0,181.09375 c 0,1.73412 -0.35962,2.09375 -2.09375,2.09375 l -387.468749,0 c -1.73411,0 -2.09375,-0.35964 -2.09375,-2.09375 l 0,-181.09375 c 0,-1.73413 0.35962,-2.09375 2.09375,-2.09375 z"
+     style="fill:url(#linearGradient3927);fill-opacity:1;fill-rule:evenodd;stroke:none;opacity:0.35123967000000000"
+     inkscape:export-filename="/home/hasan/QtCreator_projects/myQMLapp/elements/button_pressed.png"
+     inkscape:export-xdpi="20.830082"
+     inkscape:export-ydpi="20.830082"
+     transform="matrix(-1,0,0,-1,519.42749,-466.45149)" />
+  <path
+     inkscape:export-ydpi="20.830082"
+     inkscape:export-xdpi="20.830082"
+     inkscape:export-filename="/home/hasan/QtCreator_projects/myQMLapp/elements/button_hovered.png"
+     transform="translate(-937.16749,-72.302954)"
+     d="m -16.84375,-262 c -5.990622,0 -10.53125,4.54062 -10.53125,10.53125 l 0,181.09375 c 0,5.990619 4.540631,10.53125 10.53125,10.53125 l 387.46875,0 c 5.99063,0 10.53125,-4.540628 10.53125,-10.53125 l 0,-181.09375 C 381.15625,-257.45938 376.61563,-262 370.625,-262 l -387.46875,0 z"
+     id="path2847"
+     style="fill:#fcff2e;fill-opacity:0.23999999;fill-rule:evenodd;stroke:none;filter:url(#filter3888)"
+     inkscape:original="M -16.84375 -271.125 C -27.732715 -271.125 -36.5 -262.35772 -36.5 -251.46875 L -36.5 -70.375 C -36.5 -59.486035 -27.732715 -50.71875 -16.84375 -50.71875 L 370.625 -50.71875 C 381.51397 -50.71875 390.28125 -59.486035 390.28125 -70.375 L 390.28125 -251.46875 C 390.28125 -262.35772 381.51397 -271.125 370.625 -271.125 L -16.84375 -271.125 z "
+     inkscape:radius="-9.1256161"
+     sodipodi:type="inkscape:offset" />
+  <path
+     inkscape:export-ydpi="20.830082"
+     inkscape:export-xdpi="20.830082"
+     inkscape:export-filename="/home/hasan/QtCreator_projects/myQMLapp/elements/button_hovered.png"
+     sodipodi:type="inkscape:offset"
+     inkscape:radius="-6.6408629"
+     inkscape:original="M 15.4375 -186.1875 C 4.5485345 -186.1875 -4.21875 -177.42022 -4.21875 -166.53125 L -4.21875 14.5625 C -4.21875 25.451465 4.5485345 34.21875 15.4375 34.21875 L 402.9375 34.21875 C 413.82647 34.21875 422.59375 25.451465 422.59375 14.5625 L 422.59375 -166.53125 C 422.59375 -177.42022 413.82647 -186.1875 402.9375 -186.1875 L 15.4375 -186.1875 z "
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+     id="path2849"
+     d="m 15.4375,-179.53125 c -7.3243597,0 -13,5.67564 -13,13 l 0,181.09375 c 0,7.324357 5.6756424,13 13,13 l 387.5,0 c 7.32436,0 13,-5.675641 13,-13 l 0,-181.09375 c 0,-7.32437 -5.67563,-13 -13,-13 l -387.5,0 z"
+     transform="translate(-969.45813,-157.24137)" />
+  <path
+     inkscape:export-ydpi="20.830082"
+     inkscape:export-xdpi="20.830082"
+     inkscape:export-filename="/home/hasan/QtCreator_projects/myQMLapp/elements/button_hovered.png"
+     sodipodi:type="inkscape:offset"
+     inkscape:radius="-9.1256161"
+     inkscape:original="M -16.84375 -271.125 C -27.732715 -271.125 -36.5 -262.35772 -36.5 -251.46875 L -36.5 -70.375 C -36.5 -59.486035 -27.732715 -50.71875 -16.84375 -50.71875 L 370.625 -50.71875 C 381.51397 -50.71875 390.28125 -59.486035 390.28125 -70.375 L 390.28125 -251.46875 C 390.28125 -262.35772 381.51397 -271.125 370.625 -271.125 L -16.84375 -271.125 z "
+     style="fill:url(#linearGradient2855);fill-opacity:1.0;fill-rule:evenodd;stroke:none"
+     id="path2851"
+     d="m -16.84375,-262 c -5.990622,0 -10.53125,4.54062 -10.53125,10.53125 l 0,181.09375 c 0,5.990619 4.540631,10.53125 10.53125,10.53125 l 387.46875,0 c 5.99063,0 10.53125,-4.540628 10.53125,-10.53125 l 0,-181.09375 C 381.15625,-257.45938 376.61563,-262 370.625,-262 l -387.46875,0 z"
+     transform="translate(-937.16749,-72.302954)" />
+  <path
+     inkscape:export-ydpi="20.830082"
+     inkscape:export-xdpi="20.830082"
+     inkscape:export-filename="/home/hasan/QtCreator_projects/myQMLapp/elements/button_hovered.png"
+     style="fill:url(#linearGradient2857);fill-opacity:1;fill-rule:evenodd;stroke:none;"
+     d="m -954.02063,-334.30387 c -5.99062,0 -10.53125,4.54062 -10.53125,10.53125 l 0,181.09375 c 0,5.99062 4.54063,10.53125 10.53125,10.53125 l 387.46875,0 c 5.99063,0 10.53125,-4.54063 10.53125,-10.53125 l 0,-181.09375 c 0,-5.99063 -4.54062,-10.53125 -10.53125,-10.53125 l -387.46875,0 z m 0,8.4375 387.46875,0 c 1.73414,0 2.09375,0.35961 2.09375,2.09375 l 0,181.09375 c 0,1.73412 -0.35962,2.09375 -2.09375,2.09375 l -387.46875,0 c -1.73411,0 -2.09375,-0.35964 -2.09375,-2.09375 l 0,-181.09375 c 0,-1.73413 0.35962,-2.09375 2.09375,-2.09375 z"
+     id="path2853" />
+</svg>
