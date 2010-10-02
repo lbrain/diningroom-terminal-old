@@ -12,7 +12,8 @@ HEADERS += \
     MenuPage.h \
     LastPage.h \
     GUI.h \
-    DBConnectPage.h
+    DBConnectPage.h \
+    QmlDialPad.h
 
 SOURCES += \
     CORE.cpp \
@@ -28,7 +29,8 @@ SOURCES += \
     MenuPage.cpp \
     LastPage.cpp \
     GUI.cpp \
-    DBConnectPage.cpp
+    DBConnectPage.cpp \
+    QmlDialPad.cpp
 
 QT += sql
 
