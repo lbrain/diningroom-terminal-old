@@ -5,8 +5,6 @@ import "elements/dialpad.js" as Logic
 Rectangle {
   id: window
 
-  signal login
-
   width: 700; height: 700; color: "gray"
 
   Rectangle {
@@ -75,7 +73,8 @@ Rectangle {
       id: row5
       spacing: 2
       anchors.horizontalCenter: parent.horizontalCenter
-      Button { id: buttonEnter; text: "Вход"; width: column.width; height: 50; onClicked: login() }
+      Button { id: buttonEnter; text: "Вход"; width: column.width; height: 50;
+        onClicked: { CLASS.callLogin(label.text); label.text = ""} }
     }
   }
 }

@@ -1,12 +1,19 @@
 #include <QtGui>
 #include "CORE.h"
 #include "GUI.h"
+#include <QtDeclarative>
 
 int main(int argc, char** argv) {
   QApplication app(argc, argv);
   CORE *core = new CORE();
   GUI* gui = new GUI();
   gui->showFullScreen();
+
+  /*QDeclarativeView* view = new QDeclarativeView();
+  view->setSource(QUrl("qrc:qmlDialPad/qmlDialPad.qml"));
+  view->show();
+  QDeclarativeContext* context = view->rootContext();
+  context->setContextProperty("GUI", gui);*/
 
   QObject::connect(gui, SIGNAL(Login(QString)), core, SLOT(Login(QString)));
   QObject::connect(core, SIGNAL(LoginSuccess(Employee,Menu)), gui, SLOT(SetMenuPage(Employee,Menu)));
