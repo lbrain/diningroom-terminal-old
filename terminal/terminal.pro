@@ -43,3 +43,6 @@ FORMS += \
     LastPage.ui \
     GUI.ui \
     DBConnectPage.ui
+
+RESOURCES += \
+    qmlDialPad.qrc

@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qmlDialPad/qmlDialPad.qml</file>
+        <file>qmlDialPad/elements/TextField.qml</file>
+        <file>qmlDialPad/elements/Button.qml</file>
+        <file>qmlDialPad/elements/images/button_pressed.png</file>
+        <file>qmlDialPad/elements/images/button_hovered.sci</file>
+        <file>qmlDialPad/elements/images/button_normal.sci</file>
+        <file>qmlDialPad/elements/images/button_pressed.sci</file>
+        <file>qmlDialPad/elements/images/button_hovered.png</file>
+        <file>qmlDialPad/elements/images/button_normal.png</file>
+        <file>qmlDialPad/elements/dialpad.js</file>
+    </qresource>
+</RCC>
